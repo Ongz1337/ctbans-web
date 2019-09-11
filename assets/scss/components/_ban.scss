@@ -1,0 +1,119 @@
+.ban{
+  &:hover{
+  //  .info {
+  //    .ban-info {
+  //      .bantime, .date {
+  //        display: inline-block;
+  //        animation: fadeIn .3s 1;
+  //      }
+  //    }
+  //  }
+    .icons{
+      opacity: 1;
+    }
+  }
+
+  display: flex;
+  margin-bottom: 50px;
+
+  .avatar{
+    width: 10%;
+    display: inline-block;
+
+    img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .info{
+    padding-left: 24px;
+    display: inline-block;
+    width: 80%;
+
+    .reason{
+      color: #2c2c2c;
+      font-weight: 400;
+      padding: 5px 0;
+    }
+
+    .name{
+      letter-spacing: 1px;
+    }
+
+    .ban-info {
+
+      .steamid, .bantime, .date{
+        &:hover{
+          background-image: unset !important;
+        }
+
+        margin-right: 2px;
+        //display: none;
+        padding: 1px 4px;
+        color: #076007;
+        //box-shadow: -2px 5px 15px -9px;
+      }
+
+      .steamid{
+        //background: #48759c url('../img/steam.png') no-repeat scroll top right;
+        background: #48759c;
+        margin-right: 2px;
+        display: inline-block;
+        padding: 1px 4px;
+        color: #d6ecff;
+      }
+
+      .bantime-date {
+        display: inline-flex;
+
+        .bantime {
+          margin-left: -4px;
+          padding: 1px 4px;
+          text-transform: uppercase;
+
+          &.banned {
+            //background: #fb8267 url("../img/unban.png") no-repeat scroll top right;
+            background: #fb8267;
+            color: #620e13;
+          }
+
+          &.unbanned {
+            //background: #a1fbac url("../img/unban.png") no-repeat scroll top right;
+            background: #a1fbac;
+            color: #30750c;
+          }
+        }
+
+        .date {
+          //background: #f6fcfd url("../img/calendar.png") no-repeat scroll top right;
+          background: #f6fcfd;
+          color: #0aa9f5;
+          text-transform: uppercase;
+          padding: 3px 4px;
+          font-size: 12px;
+          margin-left: 1px;
+        }
+      }
+    }
+  }
+
+  .admin{
+    margin-top: 16px;
+
+    .name{
+      font-weight: 400;
+    }
+  }
+
+  .icons{
+    opacity: 0;
+    width: 10%;
+    text-align: center;
+    transition: all .3s ease-in-out;
+
+    ul{
+      list-style: none ;
+    }
+  }
+}

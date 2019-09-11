@@ -3,6 +3,7 @@
     <img src="https://img.shields.io/badge/built%20with-vue-brightgreen" />
     <img src="https://img.shields.io/badge/built%20with-php-777bb3" />
 </p>
+
 # CTBans Web
 A web script for ctbans that supports databomb's ctbans plugin. 
 Soon support for Baras teambans and CT Bans by oaaron99 will be added.
@@ -35,7 +36,7 @@ Here you can specify which users can access the admin to:
 * Add (WIP)
 * and Delete bans.
 
-Here you can add a list of steam community ids.
+Here you can add a list of your admins in steam community format (ex: 76561198062770062).
 
 ## Suggestions / Errors
 Feel free to open a new issue!

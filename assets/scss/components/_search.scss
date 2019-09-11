@@ -1,0 +1,45 @@
+.searchBox{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #00a9f5;
+  z-index: 2;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  animation: fadeIn .3s 1;
+
+  .close{
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 3em;
+    position: absolute;
+    right: 5%;
+    top: 0%;
+    color: white;
+  }
+
+  form{
+    line-height: initial;
+
+    button{
+      visibility: hidden;
+    }
+
+    input{
+      width: auto;
+      background: #6ad1ff;
+      text-align: center;
+      color: black;
+      font-size: 24px;
+      padding: 4px 10px;
+      border: none;
+      border-radius: 4px;
+      box-shadow: 0 5px 12px -5px #1b75a7;
+      min-width: 25%;
+    }
+  }
+}

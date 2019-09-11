@@ -1,0 +1,180 @@
+@import "includes/_variables";
+
+.errors {
+  position: fixed;
+  z-index: 3;
+  width: 40%;
+  background-color: #ab0f0f;
+  right: 25px;
+  top: 25px;
+  color: #f99;
+
+  ul {
+    list-style: none;
+
+    li {
+      padding: 10px 35px 10px;
+      position: relative;
+
+      span{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+[v-clock]{
+  display: none;
+}
+
+.container{
+  &.flex{
+    display: flex;
+  }
+  width: 95%;
+  margin: 0 auto;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  vertical-align: middle;
+}
+
+body{
+  background-color: $bodyBgColour;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+}
+
+header{
+  height: $headerHeight;
+  background-color: $headerBgColor;
+}
+
+.loading{
+  width: 100%;
+  text-align: center;
+}
+
+main{
+  width: 80%;
+  //min-height: 450px;
+  margin: -($headerHeight / 2) auto ($headerHeight / 4);
+  background-color: $mainBgColour;
+  border-top-left-radius: $borderRadius;
+  border-top-right-radius: $borderRadius;
+  box-shadow: 0 45px 15px -20px $boxShadowColour;
+
+  .header{
+    height: ($headerHeight / 2);
+    line-height: ($headerHeight / 2);
+    text-align: center;
+    position: relative;
+
+    @import "components/search";
+
+    .errors{
+      color: red;
+      background-color: #540c0c;
+      bottom: -35px;
+      line-height: initial;
+      width: 25%;
+      margin: 25px auto;
+      padding: 5px;
+    }
+
+    .menu, .search, .sitename{
+      width: 10%;
+      display: inline-block;
+      line-height: ($headerHeight / 2);
+    }
+
+    .sitename{
+      width: 80%;
+      letter-spacing: 1px;
+      color: $blue;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    .menu{
+      z-index: 1;
+    }
+
+    .search{
+
+    }
+  }
+
+  .main{
+    padding: 25px 0;
+  }
+}
+
+
+.footer{
+  padding: 25px 0;
+  border-top: 1px dashed #caf8ff;
+  text-align: center;
+}
+
+
+
+.dropdown-parent{
+  &:hover{
+    .dropdown{
+      display: block;
+    }
+  }
+
+  list-style: none;
+  position: relative;
+
+  .dropdown{
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+    }
+
+    line-height: 1;
+    display: none;
+    background-color: white;
+    list-style: none;
+    box-shadow: 0 0 8px 2px #efefef;
+    border-radius: 4px;
+    margin-top: -40px;
+    border: 1px solid #e6f7fe;
+
+    li{
+      a{
+        &:hover{
+          background-color: #e6f7fe;
+        }
+
+        line-height: 45px;
+        display: block;
+        text-decoration: none;
+        color: #00a9f5
+      }
+
+      &.sep{
+        border-bottom: 1px solid #e6f7fe
+      }
+    }
+  }
+}
+
+@import "components/ban";
+@import "components/tooltip";
