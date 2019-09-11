@@ -1,8 +1,8 @@
-<div style="text-align: center">
+<p align="center">
     <img src="./screenshot-m.png" />
     <img src="https://img.shields.io/badge/built%20with-vue-brightgreen" />
     <img src="https://img.shields.io/badge/built%20with-php-777bb3" />
-</div>
+</p>
 # CTBans Web
 A web script for ctbans that supports databomb's ctbans plugin. 
 Soon support for Baras teambans and CT Bans by oaaron99 will be added.
@@ -29,7 +29,7 @@ Can be found at: https://steamcommunity.com/dev
 #### Debug
 If you're having issues or errors, set the `debug` section to `true`.
 
-#### `allowedSsteamids`
+#### `allowedSteamids`
 Here you can specify which users can access the admin to:  
 * Modify (WIP)
 * Add (WIP)
@@ -37,8 +37,8 @@ Here you can specify which users can access the admin to:
 
 Here you can add a list of steam community ids.
 
-## Suggestions?
-Feel free to add any 
+## Suggestions / Errors
+Feel free to open a new issue!
 
 ## Screenshots
 ![](screenshot.PNG)
